@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: var(--pc-primary-font);
+}
+
+:root {
+  /* COLORS */
+  --p4-color-1: #efba4e;
+  --p4-color-2: #674809;
+  --p4-color-3: #1c1402;
+
+  --p4-bgColor: var(--p4-color-1);
+  --p4-special-color: var(--p4-color-2);
+  --p4-textColor: var(--p4-color-3);
+
+  /* FONTS */
+  --p4-primary-font: "Lato", sans-serif;
+  --p4-highlight-font: "Anton", sans-serif;
+
+  --p4-font-size-xs: 10px;
+  --p4-font-size-s: 15px;
+  --p4-font-size-m: 20px;
+  --p4-font-size-l: 25px;
+
+  /* SPACINGS */
+  --p4-margin-xs: 5px;
+  --p4-margin-s: 10px;
+  --p4-margin-m: 20px;
+  --p4-margin-l: 30px;
+  --p4-margin-xl: 50px;
+
+  --p4-padding-xs: 5px;
+  --p4-padding-s: 10px;
+  --p4-padding-m: 20px;
+  --p4-padding-l: 30px;
+  --p4-padding-xl: 50px;
+
+  --p4-gap-xs: 5px;
+  --p4-gap-s: 10px;
+  --p4-gap-m: 20px;
+  --p4-gap-l: 30px;
+  --p4-gap-xl: 50px;
+}
+
+body {
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  backdrop-filter: blur(0px);
+}
