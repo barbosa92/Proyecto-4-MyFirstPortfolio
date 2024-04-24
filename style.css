@@ -50,8 +50,9 @@
 
 body {
   height: 100vh;
+  /* background: linear-gradient(to right, #34e89e, #0f3443); */
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  backdrop-filter: blur(0px);
+  backdrop-filter: blur(3px);
 }
