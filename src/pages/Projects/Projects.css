@@ -1,0 +1,40 @@
+#project-container {
+  height: fit-content;
+  margin-top: var(--p4-margin-xl);
+  border: 1px solid #f60303;
+}
+
+#bigDiv {
+  padding: var(--p4-padding-s);
+  display: flex;
+  align-items: center;
+}
+
+#bigDiv:nth-child(2),
+#bigDiv:nth-child(4) {
+  flex-direction: row-reverse;
+}
+
+#firstDiv {
+  width: 40%;
+  padding: var(--p4-padding-xs);
+}
+
+#firstDiv img {
+  width: 100%;
+  border: 5px outset #ff6550;
+  padding: 2px;
+}
+
+#secondDiv {
+  border: 1px solid #c82c2c;
+  width: 60%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: var(--p4-gap-s);
+}
+
+#secondDiv h2 {
+  color: white;
+}

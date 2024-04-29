@@ -1,4 +1,4 @@
-export const headerLinks = [
+export const projects = [
   {
     name: "Landing Page: NBA Store",
     img: "/assets/proyecto-1-Screenshot.png",
@@ -15,7 +15,7 @@ export const headerLinks = [
     link: "https://project-2-face2face.netlify.app",
   },
   {
-    name: "Paint To Create",
+    name: "Image Search Engine: Paint To Create",
     img: "/assets/proyecto-3-Screenshot.png",
     link: "https://proyecto-3-paintocreate.netlify.app",
   },
