@@ -1,37 +1,54 @@
 #piDiv {
-    width: 450px;
-    height: fit-content;
-    position: absolute;
-    top: 20%;
-    left: 32%;
-    padding: var(--p4-padding-s);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: var(--p4-gap-m);
-    box-shadow: 4px -4px 15px 0px #FF1F1F, 12px -11px 7px 0px #FF9376, 20px -5px 7px 0px #FFE264, 20px 6px 7px 0px #F6FF33, 13px 12px 17px 0px #FF9527, 2px 17px 17px 0px #FF0000, -9px 21px 18px 0px #FFF212, -9px 6px 11px 0px #FF0808, -11px -9px 11px 0px #FFFA17, -11px -9px 11px 0px #FFFA17, 5px 5px 15px 5px rgba(0,0,0,0);
-    background-color: rgba(128, 128, 128, 0.668);
+  width: 450px;
+  height: fit-content;
+  position: absolute;
+  top: 20%;
+  left: 32%;
+  padding: var(--p4-padding-s);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--p4-gap-m);
+  box-shadow: 4px -4px 15px 0px #ff1f1f, 12px -11px 7px 0px #ff9376,
+    20px -5px 7px 0px #ffe264, 20px 6px 7px 0px #f6ff33,
+    13px 12px 17px 0px #ff9527, 2px 17px 17px 0px #ff0000,
+    -9px 21px 18px 0px #fff212, -9px 6px 11px 0px #ff0808,
+    -11px -9px 11px 0px #fffa17, -11px -9px 11px 0px #fffa17,
+    5px 5px 15px 5px rgba(0, 0, 0, 0);
+  background-color: rgba(128, 128, 128, 0.668);
 }
 
 #piDiv img {
-    width: 40%;
+  width: 40%;
 }
 
 #piDiv h2 {
-    width: 100%;
-    text-align: center;
-    padding: var(--p4-padding-xs);
-    color: white;
+  width: 100%;
+  text-align: center;
+  padding: var(--p4-padding-xs);
+  color: white;
 }
 
 #piDiv p {
-    border: 1px solid #000;
-    height: fit-content;
-    border-radius: 20px;
-    padding: var(--p4-padding-s);
-    text-align: center;
-    letter-spacing: 1px;
-    color: #444444;
-    background: #FFFFFF;
-    text-shadow: 1px 0px 1px #CCCCCC, 0px 1px 1px #EEEEEE, 2px 1px 1px #CCCCCC, 1px 2px 1px #EEEEEE, 3px 2px 1px #CCCCCC, 2px 3px 1px #EEEEEE, 4px 3px 1px #CCCCCC, 3px 4px 1px #EEEEEE, 5px 4px 1px #CCCCCC, 4px 5px 1px #EEEEEE, 6px 5px 1px #CCCCCC, 5px 6px 1px #EEEEEE, 7px 6px 1px #CCCCCC;
+  border: 1px solid #000;
+  height: fit-content;
+  border-radius: 20px;
+  padding: var(--p4-padding-s);
+  text-align: center;
+  letter-spacing: 1px;
+  color: #444444;
+  background: #ffffff;
+  text-shadow: 1px 0px 1px #cccccc, 0px 1px 1px #eeeeee, 2px 1px 1px #cccccc,
+    1px 2px 1px #eeeeee, 3px 2px 1px #cccccc, 2px 3px 1px #eeeeee,
+    4px 3px 1px #cccccc, 3px 4px 1px #eeeeee, 5px 4px 1px #cccccc,
+    4px 5px 1px #eeeeee, 6px 5px 1px #cccccc, 5px 6px 1px #eeeeee,
+    7px 6px 1px #cccccc;
+}
+
+@media (max-width: 768px) {
+  #piDiv {
+    width: 350px;
+    top: 30%;
+    left: 25%;
+  }
 }
