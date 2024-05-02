@@ -50,9 +50,10 @@
 
 body {
   height: 130vh;
-  background: url(./public/assets/code-background.jpg);
+  /* background: url(./public/assets/code-background.jpg); */
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   backdrop-filter: blur(2px);
+  background-color: #6f7090;
 }
