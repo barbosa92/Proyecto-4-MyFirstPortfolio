@@ -1,0 +1,18 @@
+.social-media {
+  border: 1px solid #000;
+  width: 150px;
+  height: fit-content;
+  position: absolute;
+  right: 43%;
+  top: 7%;
+}
+
+.social-media a img {
+  width: 30%;
+  padding: 7px;
+  transition: all 2s;
+}
+
+.social-media a img:hover {
+  transform: rotateY(360deg);
+}

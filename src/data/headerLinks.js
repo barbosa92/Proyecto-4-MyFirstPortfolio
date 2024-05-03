@@ -1,6 +1,6 @@
 import { AboutMe } from "../pages/AboutMe/AboutMe";
 import { Projects } from "../pages/Projects/Projects";
-import { Skills } from "../pages/Skills/Skills";
+import { Contact } from "../pages/Skills/Contact";
 
 export const headerLinks = [
   {
@@ -14,8 +14,8 @@ export const headerLinks = [
     page: Projects,
   },
   {
-    name: "Skills",
-    url: "#Skills",
-    page: Skills,
+    name: "Contact",
+    url: "#Contact",
+    page: Contact,
   },
 ];

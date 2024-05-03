@@ -1,7 +1,7 @@
 nav {
   height: 8svh;
   width: 100%;
-  position: fixed;
+  position: absolute;
   top: 0;
   background-color: #e2c044;
   transition: all 0.5s;
