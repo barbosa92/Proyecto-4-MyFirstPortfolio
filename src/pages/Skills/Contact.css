@@ -16,7 +16,7 @@ h1 {
 
 form {
   padding: var(--p4-margin-m);
-  width: 90%;
+  width: 50%;
   height: 70svh;
   margin-top: var(--p4-margin-s);
   display: flex;
@@ -25,35 +25,27 @@ form {
   justify-content: center;
   gap: var(--p4-gap-m);
   background-color: rgb(85, 110, 133);
-  animation: moverflecha 1s forwards;
+  animation: cartel 1s forwards;
 }
 
-.arrow:before {
-  transition-duration: 0.3s;
-  content: "";
-  border-color: transparent #99cc00 /*#a8cf45*/ transparent transparent;
-  border-style: solid;
-  border-width: 15px 15px 15px 0;
-  left: 5px;
-  position: absolute;
-  top: 50%;
-  margin-top: -15px;
-}
-.arrow:hover:before {
-  animation: 1.2s moverflecha infinite;
+form:hover {
+  animation: 1s cartel 1;
+  transform-origin: top center;
 }
 
-@keyframes moverflecha {
-  25% {
-    left: -15px;
-    transform: rotate(0deg);
+@keyframes cartel {
+  20% {
+    transform: rotate(15deg);
   }
-  65% {
-    left: -15px;
-    transform: rotate(180deg);
+
+  40% {
+    transform: rotate(-10deg);
   }
-  90% {
-    transform: rotate(180deg);
+  60% {
+    transform: rotate(5deg);
+  }
+  80% {
+    transform: rotate(-3deg);
   }
 }
 
@@ -61,6 +53,21 @@ form label {
   font-family: var(--p4-primary-font);
   letter-spacing: 1px;
   text-transform: capitalize;
+  animation: 2s veloz 1;
+}
+
+@keyframes veloz {
+  0% {
+    opacity: 0;
+    transform: translateX(-2000%) skewX(30deg);
+  }
+  60% {
+    opacity: 1;
+    transform: translateX(-20%) skewX(-30deg);
+  }
+  80% {
+    transform: translateX(0%) skewX(15deg);
+  }
 }
 
 form input {
@@ -71,6 +78,7 @@ form input {
   border: none;
   border-bottom: black solid;
   background-color: transparent;
+  animation: 2s veloz 1;
 }
 
 form input::placeholder {
@@ -82,6 +90,7 @@ form input::placeholder {
 form textarea {
   border-radius: 10px;
   padding: var(--p4-margin-s);
+  animation: 3s veloz 1;
 }
 
 button {
@@ -93,6 +102,30 @@ button {
   font-family: var(--p4-primary-font);
   border: none;
   cursor: pointer;
+  animation: 4s veloz 1;
+}
+
+/* button:hover {
+  animation: 1s descolgado 1;
+  transform-origin: top left;
+} */
+
+@keyframes descolgado {
+  20%,
+  60% {
+    transform: rotate(80deg);
+  }
+  40% {
+    transform: rotate(60deg);
+  }
+  80% {
+    transform: rotate(60deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(400px);
+    opacity: 0;
+  }
 }
 
 .social-media {
@@ -107,6 +140,7 @@ button {
   width: 30%;
   padding: 7px;
   transition: all 2s;
+  animation: 2s veloz 1;
 }
 
 .social-media a img:hover {
