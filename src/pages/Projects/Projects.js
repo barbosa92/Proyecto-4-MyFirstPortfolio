@@ -20,7 +20,7 @@ export const Projects = () => {
       const h2 = document.createElement("h2");
       const link = document.createElement("a");
 
-      const skillsDiv = document.createElement("div"); // Nuevo elemento para mostrar las habilidades
+      const skillsDiv = document.createElement("div");
       const description = document.createElement("p");
       const skillsBars = document.createElement("h4");
 
@@ -36,7 +36,6 @@ export const Projects = () => {
 
       description.textContent = project.description;
 
-      // Obtener las habilidades y agregarlas al elemento skillsBars
       const skills = Object.values(project.skills);
       skillsBars.textContent = skills.join(" ");
 
@@ -47,7 +46,7 @@ export const Projects = () => {
       bigDiv.appendChild(textDiv);
       textDiv.append(h2, link, skillsDiv);
 
-      skillsDiv.append(description, skillsBars); // Agregar el elemento de habilidades al proyecto
+      skillsDiv.append(description, skillsBars);
     }
   };
   divApp.appendChild(projectContainer);

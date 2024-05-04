@@ -1,10 +1,106 @@
-.social-media {
+#app {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+h1 {
+  margin-top: 70px;
+  width: 50%;
+  height: auto;
+  text-align: center;
+  font-family: var(--p4-highlight-font);
+  letter-spacing: 2px;
+  color: var(--p4-color-1);
+}
+
+form {
+  padding: var(--p4-margin-m);
+  width: 90%;
+  height: 70svh;
+  margin-top: var(--p4-margin-s);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--p4-gap-m);
+  background-color: rgb(85, 110, 133);
+  animation: moverflecha 1s forwards;
+}
+
+.arrow:before {
+  transition-duration: 0.3s;
+  content: "";
+  border-color: transparent #99cc00 /*#a8cf45*/ transparent transparent;
+  border-style: solid;
+  border-width: 15px 15px 15px 0;
+  left: 5px;
+  position: absolute;
+  top: 50%;
+  margin-top: -15px;
+}
+.arrow:hover:before {
+  animation: 1.2s moverflecha infinite;
+}
+
+@keyframes moverflecha {
+  25% {
+    left: -15px;
+    transform: rotate(0deg);
+  }
+  65% {
+    left: -15px;
+    transform: rotate(180deg);
+  }
+  90% {
+    transform: rotate(180deg);
+  }
+}
+
+form label {
+  font-family: var(--p4-primary-font);
+  letter-spacing: 1px;
+  text-transform: capitalize;
+}
+
+form input {
+  width: 35%;
+  height: 25px;
+  outline: none;
+  padding: var(--p4-margin-s);
+  border: none;
+  border-bottom: black solid;
+  background-color: transparent;
+}
+
+form input::placeholder {
+  color: rgba(255, 255, 255, 0.539);
+  letter-spacing: 1px;
+  font-family: var(--p4-primary-font);
+}
+
+form textarea {
+  border-radius: 10px;
+  padding: var(--p4-margin-s);
+}
+
+button {
   border: 1px solid #000;
+  width: 130px;
+  height: 35px;
+  border-radius: 10px;
+  font-size: var(--p4-font-size-s);
+  font-family: var(--p4-primary-font);
+  border: none;
+  cursor: pointer;
+}
+
+.social-media {
   width: 150px;
   height: fit-content;
-  position: absolute;
-  right: 43%;
-  top: 7%;
+  /* position: absolute;
+    right: 0%;
+    top: 7%; */
 }
 
 .social-media a img {
