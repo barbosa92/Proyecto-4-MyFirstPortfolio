@@ -62,13 +62,27 @@ form label {
     transform: translateX(-2000%) skewX(30deg);
   }
   60% {
-    opacity: 1;
+    opacitx: 1;
     transform: translateX(-20%) skewX(-30deg);
   }
   80% {
     transform: translateX(0%) skewX(15deg);
   }
 }
+
+/* @keyframes veloz {
+  0% {
+    opacity: 0;
+    transform: translateY(-2000%);
+  }
+  60% {
+    opacity: 1;
+    transform: translateY(-20%);
+  }
+  80% {
+    transform: translateY(0%);
+  }
+} */
 
 form input {
   width: 35%;
@@ -78,7 +92,7 @@ form input {
   border: none;
   border-bottom: black solid;
   background-color: transparent;
-  animation: 2s veloz 1;
+  animation: 3s veloz 1;
 }
 
 form input::placeholder {
@@ -90,7 +104,7 @@ form input::placeholder {
 form textarea {
   border-radius: 10px;
   padding: var(--p4-margin-s);
-  animation: 3s veloz 1;
+  animation: 4s veloz 1;
 }
 
 button {
@@ -102,7 +116,7 @@ button {
   font-family: var(--p4-primary-font);
   border: none;
   cursor: pointer;
-  animation: 4s veloz 1;
+  animation: 5s veloz 1;
 }
 
 /* button:hover {
@@ -140,7 +154,7 @@ button {
   width: 30%;
   padding: 7px;
   transition: all 2s;
-  animation: 2s veloz 1;
+  animation: 6s veloz 1;
 }
 
 .social-media a img:hover {
