@@ -1,21 +1,11 @@
 import { headerLinks } from "../../data/headerLinks";
+import { darkModeButton } from "./DarkMode/DarkMode";
 import "./Header.css";
 
 export const header = () => {
   const body = document.querySelector("body");
   const nav = document.createElement("nav");
   const ul = document.createElement("ul");
-
-  nav.innerHTML = `
-  <button class="switch">
-  <i class="bx bxs-sun">
-  <i class="bx bxs-moon">
-  </i>
-  </button>
-
-  `;
-
-  //! EMPEQUEÑECER EL HEADER Y PROBAR DE NUEVO HACER OTRO COMPONENTE PARA DARKMODE
 
   headerLinks.forEach((link) => {
     const li = document.createElement("li");
@@ -31,4 +21,6 @@ export const header = () => {
 
   nav.appendChild(ul);
   body.appendChild(nav);
+
+  darkModeButton();
 };

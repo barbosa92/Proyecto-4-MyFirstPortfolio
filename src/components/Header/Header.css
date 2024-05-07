@@ -3,8 +3,8 @@ nav {
   width: 100%;
   position: absolute;
   top: 0;
-  background-color: #e2c044;
   transition: all 0.5s;
+  border-bottom: 3px solid white;
 }
 
 nav ul {
@@ -21,7 +21,7 @@ nav ul li {
 
 nav ul li a {
   font-size: var(--p4-font-size-m);
-  color: var(--p4-color-2);
+  color: var(--p4-color-1);
   letter-spacing: 1px;
   transition: all 0.5s;
 }
@@ -32,10 +32,14 @@ nav ul li a:hover {
 
 @media (max-width: 768px) {
   nav {
-    height: 20svh;
-    background-color: #e2c044ba;
+    width: 20%;
+    height: 25svh;
+    border-right: 3px solid white;
   }
   nav ul {
     flex-direction: column;
+  }
+  nav ul li a:hover {
+    letter-spacing: 0;
   }
 }

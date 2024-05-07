@@ -47,8 +47,8 @@
 
 @media (max-width: 768px) {
   #piDiv {
-    width: 350px;
-    top: 30%;
-    left: 25%;
+    width: 300px;
+    top: 10%;
+    left: 30%;
   }
 }

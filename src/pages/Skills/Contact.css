@@ -108,3 +108,13 @@ form textarea {
     transform: translateX(0%) skewX(15deg);
   }
 }
+
+@media (max-width: 768px) {
+  form input {
+    width: 75%;
+  }
+  form textarea {
+    width: 100%;
+    height: 20%;
+  }
+}

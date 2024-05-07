@@ -7,12 +7,12 @@ export const Projects = () => {
 
   projectContainer.id = "project-container";
 
-  divApp.innerHTML = "Projects";
+  divApp.innerHTML = `<h1>Projects</h1`;
   // document.body.style.backgroundImage = "url(/assets/BackgroundProjects.avif)";
 
   const projectDiv = () => {
     for (const project of projects) {
-      const bigDiv = document.createElement("div");
+      const bigDiv = document.createElement("section");
       const imgDiv = document.createElement("div");
       const img = document.createElement("img");
 

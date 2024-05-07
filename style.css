@@ -49,11 +49,12 @@
 }
 
 body {
-  height: 130vh;
+  height: 100vh;
   /* background: url(./public/assets/backgroundImage4.jpg); */
   background-position: center;
   background-size: cover;
   background-repeat: repeat;
   backdrop-filter: blur(2px);
   background-color: #6f7090;
+  transition: all 0.5s;
 }
