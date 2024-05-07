@@ -1,4 +1,5 @@
 import "./Contact.css";
+import "./Buttton/Button.css";
 
 export const Contact = () => {
   const divApp = document.querySelector("#app");
@@ -23,7 +24,10 @@ export const Contact = () => {
     required
   ></textarea>
 
-      <button>Send</button>
+  <button class="custom-btn btn-12">
+  <span>Thanks!</span>
+  <span>Send</span>
+  </button>
     </form>
 
   <div class="social-media">

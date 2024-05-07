@@ -6,6 +6,17 @@ export const header = () => {
   const nav = document.createElement("nav");
   const ul = document.createElement("ul");
 
+  nav.innerHTML = `
+  <button class="switch">
+  <i class="bx bxs-sun">
+  <i class="bx bxs-moon">
+  </i>
+  </button>
+
+  `;
+
+  //! EMPEQUEÑECER EL HEADER Y PROBAR DE NUEVO HACER OTRO COMPONENTE PARA DARKMODE
+
   headerLinks.forEach((link) => {
     const li = document.createElement("li");
     const a = document.createElement("a");

@@ -33,56 +33,12 @@ form:hover {
   transform-origin: top center;
 }
 
-@keyframes cartel {
-  20% {
-    transform: rotate(15deg);
-  }
-
-  40% {
-    transform: rotate(-10deg);
-  }
-  60% {
-    transform: rotate(5deg);
-  }
-  80% {
-    transform: rotate(-3deg);
-  }
-}
-
 form label {
   font-family: var(--p4-primary-font);
   letter-spacing: 1px;
   text-transform: capitalize;
   animation: 2s veloz 1;
 }
-
-@keyframes veloz {
-  0% {
-    opacity: 0;
-    transform: translateX(-2000%) skewX(30deg);
-  }
-  60% {
-    opacitx: 1;
-    transform: translateX(-20%) skewX(-30deg);
-  }
-  80% {
-    transform: translateX(0%) skewX(15deg);
-  }
-}
-
-/* @keyframes veloz {
-  0% {
-    opacity: 0;
-    transform: translateY(-2000%);
-  }
-  60% {
-    opacity: 1;
-    transform: translateY(-20%);
-  }
-  80% {
-    transform: translateY(0%);
-  }
-} */
 
 form input {
   width: 35%;
@@ -104,59 +60,51 @@ form input::placeholder {
 form textarea {
   border-radius: 10px;
   padding: var(--p4-margin-s);
-  animation: 4s veloz 1;
-}
-
-button {
-  border: 1px solid #000;
-  width: 130px;
-  height: 35px;
-  border-radius: 10px;
-  font-size: var(--p4-font-size-s);
-  font-family: var(--p4-primary-font);
-  border: none;
-  cursor: pointer;
-  animation: 5s veloz 1;
-}
-
-/* button:hover {
-  animation: 1s descolgado 1;
-  transform-origin: top left;
-} */
-
-@keyframes descolgado {
-  20%,
-  60% {
-    transform: rotate(80deg);
-  }
-  40% {
-    transform: rotate(60deg);
-  }
-  80% {
-    transform: rotate(60deg);
-    opacity: 1;
-  }
-  100% {
-    transform: translateY(400px);
-    opacity: 0;
-  }
+  animation: 3s veloz 1;
 }
 
 .social-media {
   width: 150px;
   height: fit-content;
-  /* position: absolute;
-    right: 0%;
-    top: 7%; */
 }
 
 .social-media a img {
   width: 30%;
   padding: 7px;
   transition: all 2s;
-  animation: 6s veloz 1;
+  animation: 3s veloz 1;
 }
 
 .social-media a img:hover {
   transform: rotateY(360deg);
+}
+
+@keyframes cartel {
+  20% {
+    transform: rotate(15deg);
+  }
+
+  40% {
+    transform: rotate(-10deg);
+  }
+  60% {
+    transform: rotate(5deg);
+  }
+  80% {
+    transform: rotate(-3deg);
+  }
+}
+
+@keyframes veloz {
+  0% {
+    opacity: 0;
+    transform: translateX(-2000%) skewX(30deg);
+  }
+  60% {
+    opacitx: 1;
+    transform: translateX(-20%) skewX(-30deg);
+  }
+  80% {
+    transform: translateX(0%) skewX(15deg);
+  }
 }
