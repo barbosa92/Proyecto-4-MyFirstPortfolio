@@ -1,9 +1,19 @@
+h1 {
+  margin-top: 70px;
+  width: 50%;
+  height: auto;
+  text-align: center;
+  font-family: var(--p4-highlight-font);
+  letter-spacing: 2px;
+  color: var(--p4-color-1);
+}
+
 #piDiv {
   width: 450px;
   height: fit-content;
   position: absolute;
   top: 20%;
-  left: 32%;
+  left: 28%;
   padding: var(--p4-padding-s);
   display: flex;
   flex-direction: column;
@@ -46,9 +56,25 @@
 }
 
 @media (max-width: 768px) {
+  h1 {
+    margin-top: 70px;
+    width: 50%;
+  }
   #piDiv {
     width: 300px;
-    top: 10%;
-    left: 30%;
+    top: 30%;
+    left: 20%;
+  }
+}
+
+@media (max-width: 400px) {
+  h1 {
+    margin-left: 70px;
+  }
+  #piDiv {
+    width: 280px;
+    height: fit-content;
+    top: 27%;
+    left: 50px;
   }
 }

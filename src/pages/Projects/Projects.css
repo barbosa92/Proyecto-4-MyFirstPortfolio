@@ -1,13 +1,3 @@
-h1 {
-  margin-top: 70px;
-  width: 50%;
-  height: auto;
-  text-align: center;
-  font-family: var(--p4-highlight-font);
-  letter-spacing: 2px;
-  color: var(--p4-color-1);
-}
-
 #project-container {
   height: fit-content;
   margin-top: 52px;
@@ -24,7 +14,7 @@ h1 {
   justify-content: space-evenly;
   align-items: center;
   height: 250px;
-  background-color: rgb(85, 110, 133);
+  background-color: rgba(85, 110, 133, 0.404);
 }
 
 #bigDiv:nth-child(2),
@@ -64,7 +54,7 @@ h1 {
 }
 
 #secondDiv h2 {
-  color: rgb(2, 2, 2);
+  color: blueviolet;
   font-family: var(--p4-highlight-font);
 }
 
@@ -91,11 +81,11 @@ h1 {
 
 @keyframes movimientoderecha {
   100% {
-    transform: translateX(10%);
-    -webkit-transform: translateX(10%);
-    -moz-transform: translateX(10%);
-    -ms-transform: translateX(10%);
-    -o-transform: translateX(10%);
+    transform: translateX(0%);
+    -webkit-transform: translateX(0%);
+    -moz-transform: translateX(0%);
+    -ms-transform: translateX(0%);
+    -o-transform: translateX(0%);
   }
 }
 
@@ -103,29 +93,43 @@ h1 {
   h1 {
     width: 50%;
   }
-
   #project-container {
     gap: var(--p4-gap-s);
   }
-
   #firstDiv {
     width: 30%;
     height: 70%;
   }
-
   #firstDiv img:hover {
     transform: scale(1.1);
   }
-
   #secondDiv h2 {
     font-size: var(--p4-font-size-m);
   }
-
   #secondDiv a {
     font-size: var(--p4-font-size-s);
   }
-
   #secondDiv div {
     font-size: var(--p4-font-size-s);
+  }
+}
+
+@media (max-width: 400px) {
+  #bigDiv {
+    flex-direction: column;
+    justify-content: center;
+    height: 400px;
+  }
+  #firstDiv {
+    width: 50%;
+    height: 30%;
+  }
+  #bigDiv:nth-child(2),
+  #bigDiv:nth-child(4) {
+    flex-direction: column;
+  }
+  #secondDiv {
+    width: 90%;
+    padding: var(--p4-padding-xs);
   }
 }

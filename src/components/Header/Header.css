@@ -32,14 +32,21 @@ nav ul li a:hover {
 
 @media (max-width: 768px) {
   nav {
-    width: 20%;
-    height: 25svh;
+    width: 23%;
+    height: 24svh;
     border-right: 3px solid white;
   }
   nav ul {
     flex-direction: column;
   }
+  nav ul li a,
   nav ul li a:hover {
     letter-spacing: 0;
+  }
+}
+
+@media (max-width: 400px) {
+  nav {
+    width: 30%;
   }
 }

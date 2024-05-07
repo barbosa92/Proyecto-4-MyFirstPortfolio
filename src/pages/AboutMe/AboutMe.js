@@ -3,7 +3,7 @@ import "./AboutMe.css";
 export const AboutMe = () => {
   const divApp = document.querySelector("#app");
 
-  divApp.innerHTML = "";
+  divApp.innerHTML = `<h1>About Me</h1`;
   // document.body.style.backgroundImage = "url(/assets/backgroundImage.jpg)";
 
   const personalInfo = () => {
