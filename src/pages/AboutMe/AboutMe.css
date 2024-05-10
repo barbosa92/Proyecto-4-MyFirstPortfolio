@@ -10,21 +10,19 @@ h1 {
 
 #piDiv {
   width: 450px;
+  margin-top: var(--p4-margin-l);
   height: fit-content;
-  position: absolute;
-  top: 20%;
-  left: 28%;
   padding: var(--p4-padding-s);
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: var(--p4-gap-m);
-  box-shadow: 4px -4px 15px 0px #ff1f1f, 12px -11px 7px 0px #ff9376,
+  /* box-shadow: 4px -4px 15px 0px #ff1f1f, 12px -11px 7px 0px #ff9376,
     20px -5px 7px 0px #ffe264, 20px 6px 7px 0px #f6ff33,
     13px 12px 17px 0px #ff9527, 2px 17px 17px 0px #ff0000,
     -9px 21px 18px 0px #fff212, -9px 6px 11px 0px #ff0808,
     -11px -9px 11px 0px #fffa17, -11px -9px 11px 0px #fffa17,
-    5px 5px 15px 5px rgba(0, 0, 0, 0);
+    5px 5px 15px 5px rgba(0, 0, 0, 0); */
   background-color: rgba(128, 128, 128, 0.668);
 }
 
@@ -68,9 +66,9 @@ h1 {
 }
 
 @media (max-width: 400px) {
-  h1 {
+  /* h1 {
     margin-left: 70px;
-  }
+  } */
   #piDiv {
     width: 280px;
     height: fit-content;

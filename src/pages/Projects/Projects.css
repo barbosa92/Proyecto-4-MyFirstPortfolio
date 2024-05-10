@@ -118,7 +118,7 @@
   #bigDiv {
     flex-direction: column;
     justify-content: center;
-    height: 400px;
+    height: fit-content;
   }
   #firstDiv {
     width: 50%;
