@@ -1,12 +1,13 @@
 nav button {
   position: fixed;
-  top: 0;
-  right: 10;
+  top: 55px;
+  right: 5px;
   width: 45px;
   border-radius: 50%;
-  display: grid;
-  place-content: center;
+  /* display: grid;
+  place-content: center; */
   background-color: transparent;
+  /* margin-top: 37px; */
   border: 1px solid #000;
 }
 

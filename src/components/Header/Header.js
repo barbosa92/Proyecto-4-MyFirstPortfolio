@@ -6,6 +6,22 @@ export const header = () => {
   const body = document.querySelector("body");
   const nav = document.createElement("nav");
   const ul = document.createElement("ul");
+  const burgerMenu = document.createElement("img");
+
+  ul.id = "pages";
+
+  burgerMenu.src = "/assets/openBurgerMenu.png";
+  burgerMenu.alt = "burgerMenuLogo";
+  burgerMenu.id = "burgerMenu";
+  burgerMenu.classList.add("burger-menu");
+
+  burgerMenu.addEventListener("click", () => {
+    if (pages.style.display === "none") {
+      pages.style.display = "flex";
+    } else {
+      pages.style.display = "none";
+    }
+  });
 
   headerLinks.forEach((link) => {
     const li = document.createElement("li");
@@ -19,8 +35,8 @@ export const header = () => {
     li.addEventListener("click", link.page);
   });
 
-  nav.appendChild(ul);
   body.appendChild(nav);
+  nav.append(ul, burgerMenu);
 
   darkModeButton();
 };

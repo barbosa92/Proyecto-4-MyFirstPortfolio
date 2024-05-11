@@ -5,6 +5,15 @@ nav {
   top: 0;
   transition: all 0.5s;
   border-bottom: 3px solid white;
+  display: flex;
+  align-items: center;
+}
+
+#burgerMenu {
+  width: 30px;
+  margin-left: var(--p4-margin-xs);
+  display: none;
+  cursor: pointer;
 }
 
 nav ul {
@@ -30,24 +39,12 @@ nav ul li a:hover {
   letter-spacing: 15px;
 }
 
-@media (max-width: 768px) {
-  /* nav {
-    width: 23%;
-    height: 24svh;
-    border-right: 3px solid white;
+@media (max-width: 500px) {
+  #burgerMenu {
+    display: block;
+  }
+
+  nav ul {
     display: none;
   }
-  nav ul {
-    flex-direction: column;
-  } */
-  nav ul li a,
-  nav ul li a:hover {
-    letter-spacing: 0;
-  }
-}
-
-@media (max-width: 400px) {
-  /* nav {
-    width: 30%;
-  } */
 }
