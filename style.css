@@ -9,22 +9,6 @@
   font-family: var(--pc-primary-font);
 }
 
-h1 {
-  color: var(--p4-dark-1);
-}
-
-h2 {
-  color: var(--p4-dark-3);
-}
-
-a {
-  color: var(--p4-dark-2);
-}
-
-p {
-  color: var(--p4-dark-3);
-}
-
 :root {
   /* COLORS */
   --p4-light-1: #03aed2;
@@ -62,6 +46,34 @@ p {
   --p4-gap-m: 20px;
   --p4-gap-l: 30px;
   --p4-gap-xl: 50px;
+}
+
+h1 {
+  color: #bc2e1e;
+  background: #edde9c;
+  text-shadow: 0 1px 0px #378ab4, 1px 0 0px #5dabcd, 1px 2px 1px #378ab4,
+    2px 1px 1px #5dabcd, 2px 3px 2px #378ab4, 3px 2px 2px #5dabcd,
+    3px 4px 2px #378ab4, 4px 3px 3px #5dabcd, 4px 5px 3px #378ab4,
+    5px 4px 2px #5dabcd, 5px 6px 2px #378ab4, 6px 5px 2px #5dabcd,
+    6px 7px 1px #378ab4, 7px 6px 1px #5dabcd, 7px 8px 0px #378ab4,
+    8px 7px 0px #5dabcd;
+  width: fit-content;
+  padding: 0 var(--p4-padding-s);
+  border-radius: 10px;
+}
+
+h2 {
+  color: var(--p4-dark-3);
+}
+
+a,
+h4 {
+  color: var(--p4-dark-2);
+}
+
+p {
+  color: var(--p4-dark-1);
+  text-shadow: 3px 5px 2px #474747;
 }
 
 body {
