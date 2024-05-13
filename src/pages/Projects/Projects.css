@@ -54,13 +54,14 @@
 }
 
 #secondDiv h2 {
-  color: blueviolet;
+  /* color: blueviolet; */
   font-family: var(--p4-highlight-font);
+  letter-spacing: 2px;
 }
 
 #secondDiv a {
   transition: all 0.5s;
-  color: rgb(54, 54, 235);
+  /* color: rgb(54, 54, 235); */
 }
 
 #secondDiv div {
@@ -71,11 +72,11 @@
 
 @keyframes movimientoizquierda {
   100% {
-    transform: translateX(10%);
-    -webkit-transform: translateX(10%);
-    -moz-transform: translateX(10%);
-    -ms-transform: translateX(10%);
-    -o-transform: translateX(10%);
+    transform: translateX(0%);
+    -webkit-transform: translateX(0%);
+    -moz-transform: translateX(0%);
+    -ms-transform: translateX(0%);
+    -o-transform: translateX(0%);
   }
 }
 

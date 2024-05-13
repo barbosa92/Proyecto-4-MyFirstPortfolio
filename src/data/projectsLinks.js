@@ -45,8 +45,8 @@ export const projects = [
       "Proyecto réplica del buscador de imágenes Pinterest, usando la base de datos proporcionada por Unsplash. ",
     skills: {
       HTML: "HTML: 10%",
-      CSS: "CSS: 40%",
-      JS: "JS: 50%",
+      CSS: "CSS: 20%",
+      JS: "JS: 70%",
     },
   },
 ];

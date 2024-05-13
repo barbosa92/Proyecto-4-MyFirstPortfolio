@@ -9,15 +9,31 @@
   font-family: var(--pc-primary-font);
 }
 
+h1 {
+  color: var(--p4-dark-1);
+}
+
+h2 {
+  color: var(--p4-dark-3);
+}
+
+a {
+  color: var(--p4-dark-2);
+}
+
+p {
+  color: var(--p4-dark-3);
+}
+
 :root {
   /* COLORS */
-  --p4-color-1: #efba4e;
-  --p4-color-2: #674809;
-  --p4-color-3: #1c1402;
+  --p4-light-1: #03aed2;
+  --p4-light-2: #68d2e8;
+  --p4-light-3: #fdde55;
 
-  --p4-bgColor: var(--p4-color-1);
-  --p4-special-color: var(--p4-color-2);
-  --p4-textColor: var(--p4-color-3);
+  --p4-dark-1: #c3ff93;
+  --p4-dark-2: #ffdb5c;
+  --p4-dark-3: #90d26d;
 
   /* FONTS */
   --p4-primary-font: "Lato", sans-serif;
@@ -54,6 +70,6 @@ body {
   background-position: center;
   background-size: cover;
   background-repeat: repeat;
-  backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px) saturate(150%);
   transition: all 0.5s;
 }

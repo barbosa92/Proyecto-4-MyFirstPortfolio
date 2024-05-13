@@ -10,19 +10,6 @@ export const header = () => {
 
   ul.id = "pages";
 
-  burgerMenu.src = "/assets/openBurgerMenu.png";
-  burgerMenu.alt = "burgerMenuLogo";
-  burgerMenu.id = "burgerMenu";
-  burgerMenu.classList.add("burger-menu");
-
-  burgerMenu.addEventListener("click", () => {
-    if (pages.style.display === "none") {
-      pages.style.display = "flex";
-    } else {
-      pages.style.display = "none";
-    }
-  });
-
   headerLinks.forEach((link) => {
     const li = document.createElement("li");
     const a = document.createElement("a");
@@ -36,7 +23,7 @@ export const header = () => {
   });
 
   body.appendChild(nav);
-  nav.append(ul, burgerMenu);
+  nav.append(ul);
 
   darkModeButton();
 };

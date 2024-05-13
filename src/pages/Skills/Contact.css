@@ -18,11 +18,6 @@ form {
   animation: cartel 1s forwards;
 }
 
-form:hover {
-  animation: 1s cartel 1;
-  transform-origin: top center;
-}
-
 form label {
   font-family: var(--p4-primary-font);
   letter-spacing: 1px;
@@ -31,7 +26,7 @@ form label {
 }
 
 form input {
-  width: 35%;
+  width: 70%;
   height: 25px;
   outline: none;
   padding: var(--p4-margin-s);
@@ -51,6 +46,12 @@ form textarea {
   border-radius: 10px;
   padding: var(--p4-margin-s);
   animation: 3s veloz 1;
+}
+
+.custom-btn {
+  display: grid;
+  align-items: start;
+  margin-left: var(--p4-margin-l);
 }
 
 .social-media {
@@ -102,7 +103,7 @@ form textarea {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 880px) {
   form input {
     width: 75%;
   }

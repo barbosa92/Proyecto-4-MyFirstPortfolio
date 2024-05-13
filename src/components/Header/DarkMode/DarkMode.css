@@ -8,7 +8,7 @@ nav button {
   place-content: center; */
   background-color: transparent;
   /* margin-top: 37px; */
-  border: 1px solid #000;
+  border: 3px dotted #000;
 }
 
 nav button img {
@@ -18,9 +18,25 @@ nav button img {
 
 .dark-mode {
   background: url(/assets/backgroundImageDark2.jpg);
+  /* background-color: black; */
   background-position: center;
   background-size: cover;
   background-repeat: repeat;
   backdrop-filter: blur(5px);
-  color: #fff;
+}
+
+body.dark-mode h1 {
+  color: var(--p4-light-1);
+}
+
+body.dark-mode h2 {
+  color: var(--p4-light-2);
+}
+
+body.dark-mode a {
+  color: var(--p4-light-3);
+}
+
+body.dark-mode p {
+  color: var(--p4-light-2);
 }

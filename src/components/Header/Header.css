@@ -4,7 +4,7 @@ nav {
   position: absolute;
   top: 0;
   transition: all 0.5s;
-  border-bottom: 3px solid white;
+  border-bottom: 3px solid rgb(223, 64, 64);
   display: flex;
   align-items: center;
 }
@@ -30,21 +30,20 @@ nav ul li {
 
 nav ul li a {
   font-size: var(--p4-font-size-m);
-  color: var(--p4-color-1);
-  letter-spacing: 1px;
+  /* color: var(--p4-color-1); */
+  letter-spacing: 2px;
   transition: all 0.5s;
+  font-weight: 700;
+  padding: var(--p4-padding-xs);
 }
 
 nav ul li a:hover {
-  letter-spacing: 15px;
+  letter-spacing: 10px;
+  background-color: aqua;
 }
 
 @media (max-width: 500px) {
-  #burgerMenu {
-    display: block;
-  }
-
-  nav ul {
-    display: none;
+  nav ul li a:hover {
+    letter-spacing: 5px;
   }
 }

@@ -24,7 +24,7 @@ export const Contact = () => {
     required
   ></textarea>
 
-  <button class="custom-btn btn-12">
+  <button class="custom-btn">
   <span>Thanks!</span>
   <span>Send</span>
   </button>
