@@ -4,11 +4,8 @@ nav button {
   right: 5px;
   width: 45px;
   border-radius: 50%;
-  /* display: grid;
-  place-content: center; */
-  background-color: transparent;
-  /* margin-top: 37px; */
-  border: 3px dotted #000;
+  background-color: var(--p4-dark-3);
+  border: 3px dashed #000;
 }
 
 nav button img {
@@ -25,6 +22,11 @@ nav button img {
   backdrop-filter: blur(5px);
 }
 
+body.dark-mode h1 {
+  color: #edde9c;
+  background: #bc2e1e;
+}
+
 body.dark-mode h2 {
   color: var(--p4-light-2);
 }
@@ -35,4 +37,9 @@ body.dark-mode a {
 
 body.dark-mode p {
   color: var(--p4-light-2);
+}
+
+.dark-mode #bigDiv {
+  box-shadow: 5px 5px 5px 0px #ffffff, inset 4px 4px 15px 0px #ffffff,
+    5px 5px 15px 5px rgba(0, 0, 0, 0);
 }

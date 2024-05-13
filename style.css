@@ -58,8 +58,8 @@ h1 {
     6px 7px 1px #378ab4, 7px 6px 1px #5dabcd, 7px 8px 0px #378ab4,
     8px 7px 0px #5dabcd;
   width: fit-content;
-  padding: 0 var(--p4-padding-s);
-  border-radius: 10px;
+  padding: var(--p4-padding-xs) var(--p4-padding-m);
+  border-radius: 20px;
 }
 
 h2 {

@@ -104,6 +104,9 @@ form textarea {
 }
 
 @media (max-width: 880px) {
+  form {
+    width: 70%;
+  }
   form input {
     width: 75%;
   }
