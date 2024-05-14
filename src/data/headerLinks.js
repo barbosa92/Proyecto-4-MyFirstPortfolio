@@ -4,17 +4,17 @@ import { Contact } from "../pages/Skills/Contact";
 
 export const headerLinks = [
   {
-    name: "About Me",
+    name: "Sobre mi",
     url: "#aboutMe",
     page: AboutMe,
   },
   {
-    name: "Projects",
+    name: "Proyectos",
     url: "#Projects",
     page: Projects,
   },
   {
-    name: "Contact",
+    name: "Contacto",
     url: "#Contact",
     page: Contact,
   },

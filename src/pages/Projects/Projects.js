@@ -7,7 +7,7 @@ export const Projects = () => {
 
   projectContainer.id = "project-container";
 
-  divApp.innerHTML = `<h1>Projects</h1`;
+  divApp.innerHTML = `<h1>Proyectos</h1`;
   // document.body.style.backgroundImage = "url(/assets/BackgroundProjects.avif)";
 
   const projectDiv = () => {
@@ -31,7 +31,7 @@ export const Projects = () => {
       textDiv.id = "secondDiv";
       h2.textContent = project.name;
       link.href = project.link;
-      link.textContent = "Go to the project" + " " + project.linkName;
+      link.textContent = "Ir al proyecto" + " " + project.linkName;
       link.target = "_blank";
 
       description.textContent = project.description;
@@ -40,15 +40,13 @@ export const Projects = () => {
       skillsBars.textContent = skills.join(" ");
 
       projectContainer.appendChild(bigDiv);
-      bigDiv.appendChild(imgDiv);
+      bigDiv.append(imgDiv, textDiv);
       imgDiv.appendChild(img);
-
-      bigDiv.appendChild(textDiv);
       textDiv.append(h2, link, skillsDiv);
-
       skillsDiv.append(description, skillsBars);
     }
   };
+
   divApp.appendChild(projectContainer);
 
   projectDiv();

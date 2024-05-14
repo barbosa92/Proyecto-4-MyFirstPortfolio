@@ -3,7 +3,7 @@ import "./AboutMe.css";
 export const AboutMe = () => {
   const divApp = document.querySelector("#app");
 
-  divApp.innerHTML = `<h1>About Me</h1`;
+  divApp.innerHTML = `<h1>Sobre Mi</h1`;
   // document.body.style.backgroundImage = "url(/assets/backgroundImage.jpg)";
 
   const personalInfo = () => {
@@ -14,14 +14,16 @@ export const AboutMe = () => {
 
     personalInfoDiv.id = "piDiv";
     personalPictureImg.src = "/assets/hombre.png";
-    personalTitle.textContent = "About Me";
+    personalTitle.textContent = "Sobre Mi";
     personalBiography.textContent =
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum illum asperiores at deserunt animi, culpa iure ea vitae saepe assumenda doloribus ducimus iste sit architecto officia voluptatum labore alias inventore!";
 
     divApp.appendChild(personalInfoDiv);
-    personalInfoDiv.appendChild(personalPictureImg);
-    personalInfoDiv.appendChild(personalTitle);
-    personalInfoDiv.appendChild(personalBiography);
+    personalInfoDiv.append(
+      personalPictureImg,
+      personalTitle,
+      personalBiography
+    );
   };
 
   personalInfo();
