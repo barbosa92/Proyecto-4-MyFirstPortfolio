@@ -16,7 +16,7 @@ export const AboutMe = () => {
     personalPictureImg.src = "/assets/hombre.png";
     personalTitle.textContent = "Sobre Mi";
     personalBiography.textContent =
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum illum asperiores at deserunt animi, culpa iure ea vitae saepe assumenda doloribus ducimus iste sit architecto officia voluptatum labore alias inventore!";
+      "Me llamo Víctor Manuel Ruiz Ponferrada, estudiante de desarrollo y programación web Full Stack en ThePowerMBA.";
 
     divApp.appendChild(personalInfoDiv);
     personalInfoDiv.append(

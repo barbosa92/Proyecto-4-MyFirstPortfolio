@@ -5,6 +5,7 @@ import { Contact } from "./src/pages/Skills/Contact";
 import "./style.css";
 
 header();
-AboutMe();
 Contact();
 Projects();
+AboutMe();
+

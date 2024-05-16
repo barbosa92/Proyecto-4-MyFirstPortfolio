@@ -18,6 +18,16 @@ h1 {
   align-items: center;
   gap: var(--p4-gap-m);
   background-color: rgba(128, 128, 128, 0.668);
+  animation: 5s aparicion ease-in-out ;
+}
+
+@-webkit-keyframes aparicion{
+     0%{
+     	opacity: 0;
+     }
+       50%{
+     	opacity: 0.8;
+     }
 }
 
 #piDiv img {
