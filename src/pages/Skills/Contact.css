@@ -48,6 +48,10 @@ form textarea {
   margin-left: var(--p4-margin-l);
 }
 
+.custom-btn span {
+  color: var(--p4-dark-1);
+}
+
 .social-media {
   width: 150px;
   height: fit-content;

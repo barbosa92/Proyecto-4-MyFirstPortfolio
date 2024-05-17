@@ -3,20 +3,18 @@ import "./AboutMe.css";
 export const AboutMe = () => {
   const divApp = document.querySelector("#app");
 
-  divApp.innerHTML = `<h1>Sobre Mi</h1`;
-  // document.body.style.backgroundImage = "url(/assets/backgroundImage.jpg)";
+  divApp.innerHTML = `<h1>About Me</h1`;
 
   const personalInfo = () => {
     const personalInfoDiv = document.createElement("div");
     const personalPictureImg = document.createElement("img");
-    // const personalTitle = document.createElement("h2");
     const personalBiography = document.createElement("p");
 
     personalInfoDiv.id = "piDiv";
     personalPictureImg.src = "/assets/personal-picture.jpg";
-    // personalTitle.textContent = "Sobre Mi";
-    personalBiography.textContent =
-      "Me llamo Víctor Manuel Ruiz Ponferrada, estudiante de desarrollo y programación web Full Stack en ThePowerMBA.";
+    personalBiography.innerHTML =
+      `Mi nombre Víctor Manuel, actualmente soy estudiante de programación y desarrollo web Full Stack en ThePowerMBA.  
+      <br> Disfruto aprendiendo cada día más sobre este maravilloso mundo rodeado de código.`;
 
     divApp.appendChild(personalInfoDiv);
     personalInfoDiv.append(personalPictureImg, personalBiography);

@@ -1,43 +1,26 @@
-h1 {
-  margin-top: 70px;
-  width: 50%;
-  height: auto;
-  text-align: center;
-  font-family: var(--p4-highlight-font);
-  letter-spacing: 2px;
-  color: var(--p4-color-1);
-}
-
 #piDiv {
-  width: 650px;
+  width: 90%;
   margin-top: var(--p4-margin-s);
   height: fit-content;
   padding: var(--p4-padding-s);
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: var(--p4-gap-m);
-  background-color: rgba(128, 128, 128, 0.668);
   animation: 5s aparicion ease-in-out;
 }
 
 #piDiv img {
-  width: 70%;
+  width: 50%;
   height: 400px;
-  border-radius: 50%;
-}
-
-#piDiv h2 {
-  width: 100%;
-  text-align: center;
-  padding: var(--p4-padding-xs);
-  color: white;
+  background-color:white;
+  padding:10px 10px 50px 10px;
+  box-shadow:10px 10px 30px rgba(0, 0, 0, 0.8);
 }
 
 #piDiv p {
-  border: 1px solid #000;
+  width: 45%;
   height: fit-content;
-  border-radius: 20px;
+  border-radius: 0 0 20px 20px ;
   padding: var(--p4-padding-s);
   text-align: center;
   letter-spacing: 1px;
@@ -60,22 +43,21 @@ h1 {
 }
 
 @media (max-width: 768px) {
-  h1 {
-    margin-top: 70px;
-    width: 50%;
+  #piDiv img {
+    width: 90%;
+    margin: var(--p4-padding-s);
   }
-  #piDiv {
-    width: 300px;
-    top: 30%;
-    left: 20%;
+  #piDiv p {
+    width: 90%;
+    margin: var(--p4-padding-s);
   }
 }
 
 @media (max-width: 400px) {
   #piDiv {
-    width: 280px;
     height: fit-content;
-    top: 27%;
-    left: 50px;
+  }
+  #piDiv p {
+    height: fit-content;
   }
 }

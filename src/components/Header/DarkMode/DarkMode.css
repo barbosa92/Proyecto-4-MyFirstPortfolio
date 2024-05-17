@@ -1,7 +1,7 @@
 nav button {
-  position: fixed;
-  top: 55px;
-  right: 5px;
+  position: absolute;
+  top: 70px;
+  right: 20px;
   width: 45px;
   border-radius: 50%;
   background-color: var(--p4-dark-3);

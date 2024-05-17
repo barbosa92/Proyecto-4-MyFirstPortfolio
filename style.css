@@ -60,7 +60,13 @@ h1 {
     8px 7px 0px #5dabcd;
   width: fit-content;
   padding: var(--p4-padding-xs) var(--p4-padding-m);
-  border-radius: 20px;
+  border-radius: 10px;
+  margin-top: 70px;
+  width: 50%;
+  height: auto;
+  text-align: center;
+  font-family: var(--p4-highlight-font);
+  letter-spacing: 2px;
 }
 
 h2 {
@@ -92,4 +98,10 @@ body {
   display: flex;
   align-items: center;
   flex-direction: column;
+}
+
+@media (max-width: 880px) {
+  h1 {
+    margin-top: 100px;
+  }
 }

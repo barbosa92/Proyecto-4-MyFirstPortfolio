@@ -28,7 +28,7 @@
 #firstDiv {
   width: 30%;
   height: 90%;
-  padding: var(--p4-padding-xs);
+  padding: var(--p4-padding-s);
   transform: translateX(1000px);
   animation: movimientoizquierda 2s forwards;
 }
@@ -36,7 +36,6 @@
 #firstDiv img {
   width: 100%;
   height: 100%;
-  border: 2px solid #ff6550;
   transition: all 0.5s;
   border-radius: 10px;
   box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000,

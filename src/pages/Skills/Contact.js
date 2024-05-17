@@ -6,7 +6,7 @@ export const Contact = () => {
 
   divApp.innerHTML = `
 
-  <h1>Contáctame</h1>
+  <h1>Contact Me</h1>
 
   <form action="" method="get">
   <label for="name">Name and surname</label>
@@ -35,7 +35,9 @@ export const Contact = () => {
       <img src="/assets/githubLogo.png" alt="gitHub logo">
       </a>
       
-      <a target="_blank" href="www.linkedin.com/in/victor-manuel-ruiz-ponferrada-1a5257285">
+      <a target="_blank" href="www.linkedin.com/in/
+      victor-manuel-ruiz-ponferrada
+      ">
       <img src="/assets/linkedinLogo.png" alt="linkedin logo">
       </a>
       
