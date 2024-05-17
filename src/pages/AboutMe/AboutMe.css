@@ -9,8 +9,8 @@ h1 {
 }
 
 #piDiv {
-  width: 450px;
-  margin-top: var(--p4-margin-l);
+  width: 650px;
+  margin-top: var(--p4-margin-s);
   height: fit-content;
   padding: var(--p4-padding-s);
   display: flex;
@@ -18,20 +18,13 @@ h1 {
   align-items: center;
   gap: var(--p4-gap-m);
   background-color: rgba(128, 128, 128, 0.668);
-  animation: 5s aparicion ease-in-out ;
-}
-
-@-webkit-keyframes aparicion{
-     0%{
-     	opacity: 0;
-     }
-       50%{
-     	opacity: 0.8;
-     }
+  animation: 5s aparicion ease-in-out;
 }
 
 #piDiv img {
-  width: 40%;
+  width: 70%;
+  height: 400px;
+  border-radius: 50%;
 }
 
 #piDiv h2 {
@@ -55,6 +48,15 @@ h1 {
     4px 3px 1px #cccccc, 3px 4px 1px #eeeeee, 5px 4px 1px #cccccc,
     4px 5px 1px #eeeeee, 6px 5px 1px #cccccc, 5px 6px 1px #eeeeee,
     7px 6px 1px #cccccc;
+}
+
+@keyframes aparicion {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.8;
+  }
 }
 
 @media (max-width: 768px) {

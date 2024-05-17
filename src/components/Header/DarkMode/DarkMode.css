@@ -21,7 +21,6 @@ nav button img {
   background-repeat: repeat;
   /* backdrop-filter: blur(5px); */
   backdrop-filter: invert(0);
-
 }
 
 body.dark-mode h1 {
@@ -39,6 +38,10 @@ body.dark-mode a {
 
 body.dark-mode p {
   color: var(--p4-light-2);
+}
+
+body.dark-mode h4 {
+  color: var(--p4-light-3);
 }
 
 .dark-mode #bigDiv {

@@ -33,7 +33,7 @@ nav ul li a {
 }
 
 nav ul li a::before {
-  background: var(--p4-dark-1);
+  background: var(--p4-light-2);
   content: "";
   inset: 0;
   position: absolute;
@@ -51,7 +51,6 @@ nav ul li a:hover::before {
 
 nav ul li a:hover {
   letter-spacing: 10px;
-  color: black;
 }
 
 @media (max-width: 500px) {

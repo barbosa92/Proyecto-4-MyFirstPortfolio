@@ -9,21 +9,17 @@ export const AboutMe = () => {
   const personalInfo = () => {
     const personalInfoDiv = document.createElement("div");
     const personalPictureImg = document.createElement("img");
-    const personalTitle = document.createElement("h2");
+    // const personalTitle = document.createElement("h2");
     const personalBiography = document.createElement("p");
 
     personalInfoDiv.id = "piDiv";
-    personalPictureImg.src = "/assets/hombre.png";
-    personalTitle.textContent = "Sobre Mi";
+    personalPictureImg.src = "/assets/personal-picture.jpg";
+    // personalTitle.textContent = "Sobre Mi";
     personalBiography.textContent =
       "Me llamo Víctor Manuel Ruiz Ponferrada, estudiante de desarrollo y programación web Full Stack en ThePowerMBA.";
 
     divApp.appendChild(personalInfoDiv);
-    personalInfoDiv.append(
-      personalPictureImg,
-      personalTitle,
-      personalBiography
-    );
+    personalInfoDiv.append(personalPictureImg, personalBiography);
   };
 
   personalInfo();

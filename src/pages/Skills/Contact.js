@@ -6,7 +6,7 @@ export const Contact = () => {
 
   divApp.innerHTML = `
 
-  <h1>Contact Me</h1>
+  <h1>Contáctame</h1>
 
   <form action="" method="get">
   <label for="name">Name and surname</label>
