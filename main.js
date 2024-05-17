@@ -6,7 +6,8 @@ import "./style.css";
 
 header();
 Contact();
-AboutMe();
 Projects();
+AboutMe();
+
 
 

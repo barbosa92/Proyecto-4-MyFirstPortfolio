@@ -18,7 +18,7 @@
 }
 
 #piDiv p {
-  width: 45%;
+  width: 50%;
   height: fit-content;
   border-radius: 0 0 20px 20px ;
   padding: var(--p4-padding-s);
