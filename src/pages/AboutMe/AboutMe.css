@@ -15,8 +15,7 @@
   background-color: white;
   padding: 10px 10px 50px 10px;
   box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.8);
-  animation: movimientoizquierda 2s forwards;
-  transform: translateX(1000px);
+  animation: veloz 2s forwards;
 }
 
 #piDiv p {
@@ -34,20 +33,7 @@
     4px 3px 1px #cccccc, 3px 4px 1px #eeeeee, 5px 4px 1px #cccccc,
     4px 5px 1px #eeeeee, 6px 5px 1px #cccccc, 5px 6px 1px #eeeeee,
     7px 6px 1px #cccccc;
-  transform: translateX(-1000px);
-  animation: movimientoderecha 2s forwards;
-}
-
-@keyframes movimientoizquierda {
-  100% {
-    transform: translateX(0%);
-  }
-}
-
-@keyframes movimientoderecha {
-  100% {
-    transform: translateX(0%);
-  }
+  animation: veloz 2s forwards;
 }
 
 @media (max-width: 768px) {

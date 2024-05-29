@@ -71,36 +71,6 @@ form textarea {
   transform: rotateY(360deg);
 }
 
-@keyframes cartel {
-  20% {
-    transform: rotate(15deg);
-  }
-
-  40% {
-    transform: rotate(-10deg);
-  }
-  60% {
-    transform: rotate(5deg);
-  }
-  80% {
-    transform: rotate(-3deg);
-  }
-}
-
-@keyframes veloz {
-  0% {
-    opacity: 0;
-    transform: translateX(-2000%) skewX(30deg);
-  }
-  60% {
-    opacitx: 1;
-    transform: translateX(-20%) skewX(-30deg);
-  }
-  80% {
-    transform: translateX(0%) skewX(15deg);
-  }
-}
-
 @media (max-width: 880px) {
   form {
     width: 70%;
