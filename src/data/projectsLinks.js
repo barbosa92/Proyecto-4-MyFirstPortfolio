@@ -49,4 +49,17 @@ export const projects = [
       JS: "JS: 70%",
     },
   },
+  {
+    name: "GamesHub",
+    img: "/assets/proyecto-5-Screenshot.png",
+    link: "https://project5-gameshub.netlify.app",
+    linkName: "GamesHub",
+    description:
+      "Creación de un GamesHub, en el que he creado una serie de juegos a través de Javascript",
+    skills: {
+      HTML: "HTML: 10%",
+      CSS: "CSS: 30%",
+      JS: "JS: 60%",
+    },
+  },
 ];
