@@ -35,9 +35,7 @@ export const Contact = () => {
       <img src="/assets/githubLogo.png" alt="gitHub logo">
       </a>
       
-      <a target="_blank" href="www.linkedin.com/in/
-      victor-manuel-ruiz-ponferrada
-      ">
+      <a target="_blank" href="https://www.linkedin.com/in/victor-manuel-ruiz-ponferrada">
       <img src="/assets/linkedinLogo.png" alt="linkedin logo">
       </a>
       
